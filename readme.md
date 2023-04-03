@@ -38,7 +38,7 @@ package.json
 
 ### 5.项目仓库配置
 - 进入仓库 -> 设置 -> Webhooks -> 新建Webhook
-- URL中填入 `${domain}/api/webhook`
+- URL中填入 `${domain}/cr-bot/webhook`
 - 触发器只选择`合并请求事件`
 - 确定
 
