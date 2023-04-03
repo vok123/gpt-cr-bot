@@ -1,0 +1,62 @@
+{
+  "Print to console": {
+    "scope": "javascript,typescript,vue,typescriptreact",
+    "prefix": "log1",
+    "body": [
+      "console.log($1);",
+    ],
+    "description": "Log output to console"
+  },
+  "Print to try finally": {
+    "scope": "javascript,typescript,vue,typescriptreact",
+		"prefix": "try finally",
+		"body": [
+      "try {",
+      "\t$1",
+      "} finally {}"
+		],
+		"description": "Print to try finally"
+  },
+  "vue ts template": {
+    "scope": "vue",
+    "prefix": "vue ts template",
+    "body": [
+      "<template>",
+      "\t<div class=\"$1\">",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script lang='ts'>",
+      "import { defineComponent } from 'vue';",
+      "",
+      "export default defineComponent({",
+      "\tname: ''",
+      "});",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      ".$1 {}",
+      "</style>",
+      ""
+    ],
+    "description": "vue ts init"
+  },
+  "Print to vue ts template for src": {
+    "prefix": "vue ts src",
+    "scope": "vue",
+    "body": [
+      "<template>",
+      "\t<div class=\"$1\">",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script lang=\"ts\" src=\"$2\"></script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      ".$1 {}",
+      "</style>",
+      ""
+    ],
+    "description": "vue ts init"
+  }
+}

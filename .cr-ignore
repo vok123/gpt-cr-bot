@@ -1,0 +1,9 @@
+pnpm-lock.json
+package-lock.json
+package.json
+yarn-lock.json
+eslint*
+prettier*
+components.d*
+dist/*
+*/locales/*.json
